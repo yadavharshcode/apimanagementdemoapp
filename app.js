@@ -24,7 +24,7 @@ app.get('/', (req, res) => {
   });
 });
 
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
+const port = process.env.PORT || 8080; // Use Azure's PORT environment variable
+app.listen(port, () => {
+  console.log(`Server is running on port ${port}`);
 });
